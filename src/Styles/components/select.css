@@ -1,0 +1,36 @@
+.select-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-width: 200px;
+}
+
+.select-wrapper select{
+  width: 100%;
+  border: 0;
+  height: 40px;
+  padding: 16px;
+  border: 0.5px solid var(--gray-strong);
+  margin: 10px 0;
+  color: var(--gray-strong);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  outline: none;
+  padding: 12px;
+  align-self: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.select-wrapper select.error{
+  border-bottom: 0.5px solid red;
+}
+
+@media(min-width: 900px){
+  .select-wrapper{
+    width: 380px;
+  }
+}

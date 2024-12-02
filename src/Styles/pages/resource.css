@@ -1,0 +1,133 @@
+.resource-content{
+    width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.resource-content main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 100px 20px 0 20px;
+    height: fit-content;
+}
+
+.resource-content main .media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+.resource-content main .media img{
+    width: 350px;
+    height: 350px;
+    align-self: center;
+    margin: 10px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.resource-content main .media iframe{
+    align-self: center;
+    width: 350px;
+    height: 300px;
+}
+
+.resource-content main .resource-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resource-content main .resource-header .identity{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.resource-content main .resource-header .identity .title{
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 39px;
+    text-align: center;
+
+    color:var(--purple-primary);
+
+    margin-bottom: 5px;
+}
+
+.resource-content main .resource-header .identity h5{
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 29px;
+    text-align: center;
+
+    color: var(--gray-strong);
+}
+
+.resource-content main .resource-header .interaction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.resource-content main .resource-header .interaction a{
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.resource-content main .stars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resource-content main .stars h5{
+    color: var(--gray-strong);
+    margin: 24px auto 8px auto;
+}
+
+@media(min-width: 1000px){
+    .resource-content main .media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 16px;
+        justify-content: center;
+    }
+
+    .resource-content main .media img{
+        width: 450px;
+        height: 350px;
+    }
+    
+    .resource-content main .media iframe{
+        align-self: center;
+        width: 450px;
+        height: 350px;
+    }
+
+    .resource-content main .resource-header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .resource-content main .resource-header .identity .title{
+        text-align: start;
+    }
+
+    .resource-content main .resource-header .identity h5{
+        text-align: start;
+    }
+
+    .resource-content main .resource-header .interaction{
+        margin: 0;
+    }
+
+}

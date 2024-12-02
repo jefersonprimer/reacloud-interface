@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --purple-light: #BDD6F9;
+    --purple-medium: #699CFF;
+    --purple-primary: #0E84E5;
+
+    --app-background: #F8FCFF;
+
+    --gray-strong: #7d7d7d;
+    --gray-medium: #afafaf;
+    --gray-light: #e6e6e6;
+
+    --orange-primary: #F59252;
+}
+
+body{
+    color: #FFF;
+    transform: rotate(0.03deg);
+    background: var(--app-background);
+}
+
+body, input, button, textarea{
+    font: 400 18px Raleway, sans-serif;
+}

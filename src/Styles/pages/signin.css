@@ -1,0 +1,45 @@
+.signin-content{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-field {
+    background-color: white;
+    align-self: center;
+}
+
+.signin-field h1{
+    color: var(--gray-strong);
+    text-align: center;
+    font-size: 32px;
+}
+
+.signin-field form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.signin-content .login{
+    text-align: center;
+    color: var(--gray-strong);
+    margin: 20px;
+}
+
+@media(min-width: 1000px){
+
+    .signin-field{
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    }
+    .signin-field h1{
+        font-size: 1.5em;
+    }
+}
